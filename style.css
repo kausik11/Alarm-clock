@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: aqua;
+}
+#container{
+     background-color: white;
+     border-radius: 10px;
+     min-width: 500px;
+     min-height: 500px;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content:space-evenly;
+     align-items: center;   
+     margin: auto; 
+     padding: 10px;
+}
+
+#container img{
+    width: 200px;
+}
+.animate{
+    animation: shake 0.5s linear -2s 60;
+}
+@keyframes shake{
+   0%{
+    transform:rotate(1deg);
+   }
+   20%{
+    transform: rotate(3deg);
+   }
+   50%{
+    transform: rotate(-3deg);
+   }
+   70%{
+    transform: rotate(1deg);
+   }
+   80%{
+    transform: rotate(3deg);
+   }
+   100%{
+    transform: rotate(-3deg);
+   }
+}
+
+#clock{
+    font-size: 40px;
+    font-weight: bold;
+     letter-spacing: 5px;
+     margin-top: -40px;
+}
+#input{
+    margin-top: -35px;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+#input.disable{
+    opacity: 0.1;
+    pointer-events: none;
+}
+#input select{
+    padding: 5px;
+    width: 100px;
+    background-color: azure;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: 700;
+}
+#input select:active{
+    background-color: yellow;
+}
+#input #ampm{
+    width:107px;
+}
+
+#btn{
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+    width: 70%;
+}
